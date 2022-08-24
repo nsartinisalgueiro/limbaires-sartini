@@ -47,6 +47,11 @@ main {
     color: #faebd7;
 }
 
+.botonCarrito{
+    max-width: 600px;
+    margin-left: 33%;
+}
+
 .reparto{
     background-color: #1f1f9fcd;
     color: #faebd7;

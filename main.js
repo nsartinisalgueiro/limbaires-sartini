@@ -6,6 +6,16 @@ const btnOnlyCarrito = document.querySelectorAll(".onlyIfCarrito");
 const modalBuy = document.querySelector("#modalBuy");
 const wsappNum = "541151113625";
 
+let nombreCliente = JSON.parse(localStorage.getItem("nombreCte")) == null ? preguntarNombre() : JSON.parse(localStorage.getItem("nombreCte"));
+
+// function preguntarNombre() {
+//     let nombre = prompt("Ingrese su nombre");
+//     localStorage.setItem("nombreCte", JSON.stringify(nombre));
+//     return nombre;
+// };
+
+// alert("Bienvenido de nuevo " + nombreCliente + "!");
+
 let qtyBox;
 
 function aumentarCant(ev) {
@@ -93,3 +103,7 @@ btnOnlyCarrito.forEach(function (el) {
         el.addEventListener("click", buyCart)
     }
 });
+
+btnMas.forEach(el => console.log(el.dataset.producto))
+
+console.log(qtyBoxArr)
