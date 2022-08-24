@@ -8,13 +8,13 @@ const wsappNum = "541151113625";
 
 let nombreCliente = JSON.parse(localStorage.getItem("nombreCte")) == null ? preguntarNombre() : JSON.parse(localStorage.getItem("nombreCte"));
 
-// function preguntarNombre() {
-//     let nombre = prompt("Ingrese su nombre");
-//     localStorage.setItem("nombreCte", JSON.stringify(nombre));
-//     return nombre;
-// };
+function preguntarNombre() {
+    let nombre = prompt("Ingrese su nombre");
+    localStorage.setItem("nombreCte", JSON.stringify(nombre));
+    return nombre;
+};
 
-// alert("Bienvenido de nuevo " + nombreCliente + "!");
+alert("Bienvenido de nuevo " + nombreCliente + "!");
 
 let qtyBox;
 
