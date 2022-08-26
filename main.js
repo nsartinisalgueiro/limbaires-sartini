@@ -16,6 +16,27 @@ function preguntarNombre() {
 
 alert("Bienvenido de nuevo " + nombreCliente + "!");
 
+
+function refresh(){
+    qtyBoxArr.forEach(function (el) {
+        let  producto = el.dataset.producto
+        if (localStorage.getItem(producto)){
+            el.innerHTML = localStorage.getItem(producto)
+        }
+    })
+};
+
+refresh()
+
+function vaciarLocalStorage(){
+    Object.keys(localStorage).forEach(function(el){
+        if(el !== "nombreCte" ){
+            localStorage.removeItem(el)
+        }
+    })
+}
+
+
 let qtyBox;
 
 function aumentarCant(ev) {
@@ -29,6 +50,7 @@ function aumentarCant(ev) {
     cantidad++;
     qtyBox.innerHTML = cantidad;
     console.log("Se añadio un producto " + producto);
+    localStorage.setItem(producto,JSON.stringify(cantidad))
 };
 
 function disminuirCant(ev) {
@@ -42,6 +64,7 @@ function disminuirCant(ev) {
     cantidad == 0 ? cantidad = 0 : cantidad--;
     qtyBox.innerHTML = cantidad;
     console.log("Se quitó un producto " + producto);
+    localStorage.setItem(producto, JSON.stringify(cantidad))
 };
 
 function showCarrito() {
@@ -68,6 +91,7 @@ function emptyCart() {
     btnOnlyCarrito.forEach(el => el.style.display = "none");
     modalBuy.innerHTML = "No hay productos en el carrito, añade algo para comprar!";
     qtyBoxArr.forEach(el => el.innerHTML = 0);
+    vaciarLocalStorage();
 };
 
 function buyCart() {
@@ -83,6 +107,7 @@ function buyCart() {
     modalBuy.classList.add("bg-success")
     modalBuy.innerHTML = "Gracias por realizar la compra!";
     qtyBoxArr.forEach(el => el.innerHTML = 0);
+    vaciarLocalStorage();
 }
 
 //Event listeners
