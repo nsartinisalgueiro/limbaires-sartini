@@ -6,6 +6,8 @@ const btnOnlyCarrito = document.querySelectorAll(".onlyIfCarrito");
 const modalBuy = document.querySelector("#modalBuy");
 const wsappNum = "541151113625";
 
+//-- Aca dejo la parte de operadores avanzados, puse eso hace un tiempo por q no me se ocurre donde mas puedo cambiar--//
+
 let nombreCliente = JSON.parse(localStorage.getItem("nombreCte")) == null ? preguntarNombre() : JSON.parse(localStorage.getItem("nombreCte"));
 
 function preguntarNombre() {
