@@ -16,7 +16,7 @@ function preguntarNombre() {
     return nombre;
 };
 
-alert("Bienvenido de nuevo " + nombreCliente + "!");
+// alert("Bienvenido de nuevo " + nombreCliente + "!");
 
 
 function refresh(){
