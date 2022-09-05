@@ -79,7 +79,7 @@ function showCarrito() {
         let msg = "Vas a comprar:<br>";
         qtyBoxArr.forEach(function (el) {
             if (el.innerHTML > 0) {
-                msg += el.innerHTML + " Combo N° " + el.dataset.producto + "<br>"
+                msg += el.innerHTML + " De " + el.dataset.producto + "<br>"
             }
         });
         modalBuy.innerHTML = msg;
