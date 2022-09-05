@@ -66,6 +66,12 @@ main {
     
 }
 
+.cardDatos{
+    background-color: #ffffffa2;
+    color: #1f1f9f;
+    box-shadow: 2px 6px 6px 6px  #0c0c399c !important;
+}
+
 
 footer {
     background-color: #26717129;

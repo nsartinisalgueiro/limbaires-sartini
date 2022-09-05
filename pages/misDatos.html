@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LIMBAIRES</title>
+    <link rel="shortcut icon" href="../img/logo-limbaires.png">
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Encabezado/Barra de navegacion -->
+    <header>
+        <nav class="navbar navbar-expand-lg fondoNav shadow p-3 d-flex">
+            <div class="container-fluid ">
+                <a class="navbar-brand fs-2 fw-bold d-flex align-items-center flex-wrap" href="../index.html">
+                    <img src="../img/logo-limbaires.png" class="d-flex flex-wrap img-fluid" alt="" width="100"
+                        height="100" class="d-flex align-text-center flex-column">
+                    LIMBAIRES <p class="fst-italic fw-lighter fs-4 m-3">Calidad y servicio</p>
+                </a>
+            </div>
+            <div class="container-fluid fs-3 d-flex justify-content-center">
+                <div class="d-flex justify-content-center flex-column-reverse">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link menu m-1 d-flex justify-content-center"
+                                    href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu m-1 d-flex justify-content-center"
+                                    href="../pages/promociones.html">Promociones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu m-1 d-flex justify-content-center"
+                                    href="../pages/contacto.html">Zona De Reparto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu m-1 d-flex justify-content-center"
+                                    href="../pages/carritoDeCompras.html">Carrito de compras</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Contenido Principal -->
+    <main class="pb-5">
+
+        <h2 class="display-2 fs-1 pt-3 ms-4 d-flex justify-content-center">CARRITO DE COMPRAS</h2>
+        <div class="d-flex justify-content-center">
+            <hr class="separador mt-1 ms-4 col-3 d-flex justify-content-center">
+        </div>
+
+        <ul class="nav nav-tabs d-flex justify-content-center ms-5 me-5 fs-3">
+            <li class="nav-item ">
+                <a class="nav-link links" aria-current="page" href="../pages/carritoDeCompras.html">Promociones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link links" href="../pages/articulos.html">Articulos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link links" href=#MisDatos>Mis Datos</a>
+            </li>
+        </ul>
+        <div class="d-flex flex-wrap justify-content-center m-auto w-75 shadow p-3 m-1 mt-5 cardDatos fw-bold" id="MisDatos">
+        <h2 class="display-2 fs-1 pt-2 mb-5 ms-4 fw-semibold d-flex justify-content-center">Mis Datos</h2>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Nombre</label>
+                <input type="text" class="form-control m1" id="nombre" placeholder="Moe Szyslak">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">E-mail</label>
+                <input type="email" class="form-control " id="email" placeholder="cosme.fulanito@gmail.com">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Direccion</label>
+                <input type="text" class="form-control m-1" id="direccion" placeholder="AV. Siempre Viva 123">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Telefono</label>
+                <input type="number" class="form-control m-1" id="Telefono" placeholder="11-xxxx-xxxx">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">Partido</label>
+                <input type="text" class="form-control m-1" id="ciudad" placeholder="Ej: San Martin">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">Rubro</label>
+                <select id="inputState" class="form-select m-1">
+                    <option selected>Hogar</option>
+                    <option>Gastronomia</option>
+                    <option>Gimnasio</option>
+                    <option>Salud</option>
+                    <option>Educacion</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">CP</label>
+                <input type="number" class="form-control m-1" id="cp" placeholder="1653">
+            </div>
+            <div class="d-flex flex-wrap flex-row justify-content-evenly">
+            <div class="d-flex mt-2 mb-2">
+                <button type="submit" class="btn btn-primary">Guardar Datos</button>
+            </div>
+            <div class="d-flex mt-2 mb-2">
+                <button type="submit" class="btn btn-primary">Modificar Datos</button>
+            </div>
+            <div class="d-flex mt-2 mb-2">
+                <button type="submit" class="btn btn-primary">Eliminar Datos</button>
+            </div>
+            </div>
+        </form>
+        </div>
+    </main>
+
+
+    <!-- Pie de Pagina -->
+    <footer>
+
+        <div class="d-flex flex-wrap justify-content-evenly">
+            <div class="d-flex text-center">
+                <p class="m-4 fs-5 fw-bold">LIMBAIRES®</p>
+            </div>
+            <div class="d-flex text-center">
+                <p class="fst-italic fw-lighter fs-4 m-3">Horario de atencion 08 a 19 Horas.</p>
+            </div>
+            <div class="d-flex">
+                <a href="https://wa.me/540111536398820/?text=%20Hola!%20Tengo%20una%20consulta." target="_blank"><img
+                        src="../img/logo-whatsapp.png" width="50" height="50" alt="" class="m-2"></a>
+            </div>
+            <div class="d-flex">
+                <a href="https://www.instagram.com/limbaires_/" target="_blank"><img src="../img/logo-insta.png"
+                        width="50" height="50" alt="" class=" m-2"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOOSTRAP JAVA -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../aos.js"></script>
+</body>
+
+</html>
