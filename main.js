@@ -1,22 +1,20 @@
-const btnMenos = document.querySelectorAll(".btnMenos");
-const btnMas = document.querySelectorAll(".btnMas");
-const qtyBoxArr = document.querySelectorAll(".qty");
+let qtyBoxArr = document.querySelectorAll(".qty");
 const btnPreview = document.querySelector("#btnPreview");
 const btnOnlyCarrito = document.querySelectorAll(".onlyIfCarrito");
 const modalBuy = document.querySelector("#modalBuy");
-const wsappNum = "541151113625";
+const wsappNum = "541136398820";
 
-//-- Aca dejo la parte de operadores avanzados, puse eso hace un tiempo por q no me se ocurre donde mas puedo cambiar--//
 
-let nombreCliente = JSON.parse(localStorage.getItem("nombreCte")) == null ? preguntarNombre() : JSON.parse(localStorage.getItem("nombreCte"));
+// let nombreCliente = JSON.parse(localStorage.getItem("nombreCte")) == null ? preguntarNombre() : JSON.parse(localStorage.getItem("nombreCte"));
 
-function preguntarNombre() {
-    let nombre = prompt("Ingrese su nombre");
-    localStorage.setItem("nombreCte", JSON.stringify(nombre));
-    return nombre;
-};
+// function preguntarNombre() {
+//     let nombre = prompt("Ingrese su nombre");
+//     localStorage.setItem("nombreCte", JSON.stringify(nombre));
+//     return nombre;
+// };
 
-// alert("Bienvenido de nuevo " + nombreCliente + "!");
+
+
 
 
 function refresh(){
@@ -54,6 +52,7 @@ function aumentarCant(ev) {
     console.log("Se añadio un producto " + producto);
     localStorage.setItem(producto,JSON.stringify(cantidad))
 };
+
 
 function disminuirCant(ev) {
     let producto = ev.dataset.producto;
@@ -113,12 +112,7 @@ function buyCart() {
 }
 
 //Event listeners
-btnMenos.forEach(element => element.addEventListener("click", function () {
-    disminuirCant(this)
-}));
-btnMas.forEach(element => element.addEventListener("click", function () {
-    aumentarCant(this)
-}));
+
 btnPreview.addEventListener("click", showCarrito);
 btnOnlyCarrito.forEach(function (el) {
     if (el.dataset.btntype == "emptyCart") {
@@ -132,5 +126,3 @@ btnOnlyCarrito.forEach(function (el) {
 });
 
 btnMas.forEach(el => console.log(el.dataset.producto))
-
-console.log(qtyBoxArr)

@@ -1,0 +1,21 @@
+{
+ "items":{
+    "articulos": [
+
+        {
+            "imagen": "combo-1-ahorro-calidad.jpg",
+            "producto": "Lavandina",
+            "cantidad": "1 Bidon De 5 Litros",
+            "precio": "$350"
+        },
+
+        {
+            "imagen": "combo-1-ahorro-calidad.jpg",
+            "producto": "Desodorante De piso",
+            "cantidad": "1 Bidon De 5 Litros",
+            "precio": "$350"
+        }
+    ]
+}    
+
+}
