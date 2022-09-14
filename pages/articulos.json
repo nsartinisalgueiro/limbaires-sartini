@@ -3,17 +3,23 @@
     "articulos": [
 
         {
-            "imagen": "combo-1-ahorro-calidad.jpg",
-            "producto": "Lavandina",
-            "cantidad": "1 Bidon De 5 Litros",
-            "precio": "$350"
+            "nombre": "Don",
+            "apellido": "Ramon",
+            "edad": "47",
+            "comentario":"Excelente servicio"
         },
 
         {
-            "imagen": "combo-1-ahorro-calidad.jpg",
-            "producto": "Desodorante De piso",
-            "cantidad": "1 Bidon De 5 Litros",
-            "precio": "$350"
+            "nombre": "Bruce",
+            "apellido": "Wayne",
+            "edad": "33",
+            "comentario":"Los mejores!"
+        },
+        {
+            "nombre": "Carolina",
+            "apellido": "Califano",
+            "edad": "28",
+            "comentario":"Buenisimos los productos super recomendable"
         }
     ]
 }    
